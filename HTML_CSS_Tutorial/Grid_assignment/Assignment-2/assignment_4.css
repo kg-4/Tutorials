@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.container {
+  position: relative;
+  width: 530px;
+  height: 450px;
+  margin: 0 auto;
+  background: #c9a100;
+  overflow: hidden;
+}
+
+.container img {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+}
+
+.fox,
+.tiger,
+.dog,
+.bear,
+.lion {
+  border-radius: 50%;
+  border: 6px solid #c9a100;
+}
+
+.fox {
+  width: 180px;
+  height: 180px;
+  left: 40px;
+  top: 10px;
+}
+.tiger {
+  width: 180px;
+  height: 180px;
+  left: 310px;
+  top: 10px;
+}
+.dog {
+  width: 180px;
+  height: 180px;
+  left: 40px;
+  top: 260px;
+}
+.bear {
+  width: 180px;
+  height: 180px;
+  left: 310px;
+  top: 260px;
+}
+.lion {
+  width: 192px;
+  height: 192px;
+  left: 169px;
+  top: 129px;
+  z-index: 2;
+}
+
+.cloud {
+  left: 198px;
+  top: 48px;
+  width: 134px;
+  height: 106px;
+  -webkit-mask-image:
+    radial-gradient(circle at -68px 52px, transparent 90px, #000 91px),
+    radial-gradient(circle at 202px 52px, transparent 90px, #000 91px),
+    radial-gradient(circle at 67px 177px, transparent 96px, #000 97px),
+    radial-gradient(circle at 67px -102px, transparent 119px, #000 120px);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(circle at -68px 52px, transparent 90px, #000 91px),
+    radial-gradient(circle at 202px 52px, transparent 90px, #000 91px),
+    radial-gradient(circle at 67px 177px, transparent 96px, #000 97px),
+    radial-gradient(circle at 67px -102px, transparent 119px, #000 120px);
+  mask-composite: intersect;
+}
+
+.ocean {
+  left: 198px;
+  top: 296px;
+  width: 134px;
+  height: 106px;
+  -webkit-mask-image:
+    radial-gradient(circle at -68px 54px, transparent 90px, #000 91px),
+    radial-gradient(circle at 202px 54px, transparent 90px, #000 91px),
+    radial-gradient(circle at 67px -71px, transparent 96px, #000 97px),
+    radial-gradient(circle at 67px 208px, transparent 119px, #000 120px);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(circle at -68px 54px, transparent 90px, #000 91px),
+    radial-gradient(circle at 202px 54px, transparent 90px, #000 91px),
+    radial-gradient(circle at 67px -71px, transparent 96px, #000 97px),
+    radial-gradient(circle at 67px 208px, transparent 119px, #000 120px);
+  mask-composite: intersect;
+}
+
+.snow {
+  left: 76px;
+  top: 168px;
+  width: 114px;
+  height: 114px;
+  -webkit-mask-image:
+    radial-gradient(circle at 54px -68px, transparent 90px, #000 91px),
+    radial-gradient(circle at 54px 182px, transparent 90px, #000 91px),
+    radial-gradient(circle at 189px 57px, transparent 96px, #000 97px),
+    radial-gradient(circle at -44px 57px, transparent 69px, #000 70px);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(circle at 54px -68px, transparent 90px, #000 91px),
+    radial-gradient(circle at 54px 182px, transparent 90px, #000 91px),
+    radial-gradient(circle at 189px 57px, transparent 96px, #000 97px),
+    radial-gradient(circle at -44px 57px, transparent 69px, #000 70px);
+  mask-composite: intersect;
+}
+
+.forest {
+  left: 340px;
+  top: 168px;
+  width: 114px;
+  height: 114px;
+  -webkit-mask-image:
+    radial-gradient(circle at 60px -68px, transparent 90px, #000 91px),
+    radial-gradient(circle at 60px 182px, transparent 90px, #000 91px),
+    radial-gradient(circle at -75px 57px, transparent 96px, #000 97px),
+    radial-gradient(circle at 158px 57px, transparent 69px, #000 70px);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(circle at 60px -68px, transparent 90px, #000 91px),
+    radial-gradient(circle at 60px 182px, transparent 90px, #000 91px),
+    radial-gradient(circle at -75px 57px, transparent 96px, #000 97px),
+    radial-gradient(circle at 158px 57px, transparent 69px, #000 70px);
+  mask-composite: intersect;
+}

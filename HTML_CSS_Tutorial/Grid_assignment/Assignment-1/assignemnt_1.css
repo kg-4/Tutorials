@@ -1,0 +1,146 @@
+/* Assignment 1: Basic Grid Layout */
+.container {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px; 
+}
+
+.one {
+    background-color: aqua;
+}
+
+.two {
+    background-color: brown;
+}
+
+.three {
+    background-color: red;
+}
+
+.four {
+    background-color: rgb(255, 47, 0);
+}
+
+.five {
+    background-color: rgb(42, 54, 165);
+}
+
+.six {
+    background-color: rgb(255, 0, 234);
+}
+
+.seven {
+    background-color: rgb(0, 255, 47);
+}
+
+.eight {
+    background-color: rgb(10, 1, 55);
+}
+
+.nine {
+    background-color: rgb(246, 255, 0);
+}
+/* Assignment 2: Blog Page Layout */
+.layout{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-areas: "head head"
+                        "side data"
+                        "foot foot";
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 100px  1fr 80px;
+
+}
+
+.layout > div{
+    border: solid 2px black;
+}
+
+.header{
+    grid-area: head;
+    
+}
+.sidebar{
+    grid-area: side;
+    
+}
+.main{
+    grid-area: data;
+    
+}
+.footer{
+    grid-area: foot;
+}
+
+/* Assignemnet 3: Responsive Gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery > img {
+    width: 100%;
+    height: 200px;
+}
+
+/*  Assignemnt 4: Dashboard Layout */
+.dashboard {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template-areas:
+        "h h"
+        "n n"
+        "s m"
+        "f f";
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 80px 80px 1fr 80px;
+}
+
+.dashboard > div{
+    border: solid 2px black;
+}
+
+.dashboard .header {
+    grid-area: h;
+}
+
+.dashboard .nav {
+    grid-area: n;
+}
+
+.dashboard .sidebar {
+    grid-area: s;
+}
+
+.dashboard .main {
+    grid-area: m;
+}
+
+.dashboard .footer {
+    grid-area: f;
+}
+
+/*  Assignement 5:Card Layout with Impilicit Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
