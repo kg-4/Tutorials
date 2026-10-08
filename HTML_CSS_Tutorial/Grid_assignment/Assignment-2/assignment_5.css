@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 1490 / 585;
+  margin: 0 auto;
+  background: #fff;
+  container-type: inline-size;
+}
+
+.grid > * {
+  position: absolute;
+  display: block;
+}
+
+.grid img {
+  object-fit: cover;
+}
+
+.text {
+  background: #8c8c8c;
+  color: #fff;
+}
+
+.text h2 {
+  position: absolute;
+  left: 37.8%;
+  top: 15%;
+  font-size: 1.35cqw;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.text p {
+  position: absolute;
+  left: 16.8%;
+  top: 34%;
+  width: 37%;
+  font-size: 0.8cqw;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.lake {
+  left: -0%;
+  top: 0%;
+  width: 38.76%;
+  height: 73.74%;
+  clip-path: polygon(0% 0%, 100% 0%, 69.31% 31.15%, 0% 100%);
+}
+
+.gray {
+  left: 27.55%;
+  top: 0%;
+  width: 46.64%;
+  height: 55.46%;
+  clip-path: polygon(26.18% 0%, 100% 0%, 37.04% 100%, 0% 42.51%);
+}
+
+.bridge {
+  left: 0%;
+  top: 24.54%;
+  width: 65.63%;
+  height: 75.46%;
+  clip-path: polygon(0% 67.74%, 41.22% 0%, 68.04% 43.04%, 100% 100%, 0% 100%);
+}
+
+.mountain {
+  left: 45.33%;
+  top: 0.97%;
+  width: 54.67%;
+  height: 99.03%;
+  clip-path: polygon(53.71% 0%, 100% 51.1%, 100% 100%, 38.89% 100%, 0% 56.01%);
+}
+
+.sunset {
+  left: 75.19%;
+  top: 0%;
+  width: 24.81%;
+  height: 49.62%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}

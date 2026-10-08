@@ -1,0 +1,94 @@
+.layout{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 240px 280px 80px;
+    gap: 15px;    
+}
+
+.layout img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box1{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box2{
+    grid-column-start:3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box3{
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4{
+    grid-column-start:5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box5{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box6{
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box7{
+    grid-column-start:5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.layout > div{
+    position: relative;
+}
+
+.layout p {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    color: white;
+
+    font-size: 16px;
+
+    margin: 0;
+
+    text-shadow: 1px 1px 3px black;
+}
+
+.layout span {
+    position: absolute;
+
+    right: 10px;
+    bottom: 10px;
+
+    color: white;
+
+    font-size: 9px;
+
+    text-shadow: 1px 1px 3px black;
+}
