@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="real.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>Real Estate</title>
+</head>
+
+<body>
+
+
+
+    <!---------------------- NAVBAR -------------------------------->
+        <nav class="navbar">
+            <div class="right">
+                <img src="./assets/logo.png" alt="Logo Image">
+                <p>Logo</p>
+            </div>
+            <div class="left">
+                <ul>
+                <li>Home</li>
+                <i class="fa-solid fa-location-dot"></i>
+                <li>Explore</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                </ul>
+                <button class="call">
+                    <i class="fa-solid fa-phone"></i>
+                    Request a call
+                </button>
+            </div>
+        </nav>
+
+<!-------------------------- HEADER --------------------------->
+
+<section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>YOUR DREAM HOME</h1>
+            <p>IS ONE CLICK AWAY</p>
+        </div>
+
+        <div class="search-container">
+
+            <div class="tabs">
+                <button class="tab active" type="button">ALL UNITS</button>
+                <button class="tab" type="button">FOR RENT</button>
+                <button class="tab" type="button">FOR SALE</button>
+            </div>
+
+            <form class="search-form">
+
+                <div class="form-group">
+                    <label for="property">LOOKING FOR</label>
+                    <select id="property">
+                        <option>Property Type</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                        <option>Villa</option>
+                        <option>Office</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">LOCATION</label>
+                    <select id="city">
+                        <option>All Cities</option>
+                        <option>Nagpur</option>
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                        <option>Bangalore</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">PROPERTY SIZE</label>
+                    <select id="size">
+                        <option>Bedrooms</option>
+                        <option>1 Bedroom</option>
+                        <option>2 Bedrooms</option>
+                        <option>3 Bedrooms</option>
+                        <option>4+ Bedrooms</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">BUDGET</label>
+                    <select id="budget">
+                        <option>Max. Price</option>
+                        <option>₹10,00,000</option>
+                        <option>₹25,00,000</option>
+                        <option>₹50,00,000</option>
+                        <option>₹1,00,00,000+</option>
+                    </select>
+                </div>
+
+                <button class="search-btn" type="submit">
+                    Search
+                </button>
+
+            </form>
+        </div>
+
+    </section>
+
+<!--------------------- HOUSE GRID --------------------->
+
+<section class="properties">
+
+    <h1>Explore Our Properties</h1>
+
+    <p class="property_subtitle">
+        Enjoy the variety of 100+ Different properties in the market!
+    </p>
+
+    <div class="property_grid">
+
+        <!-- Card 1 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House1.png" alt="House">
+
+                <span class="status rent">FOR RENT</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House2.png" alt="House">
+
+                <span class="status sale">FOR SALE</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House3.png" alt="House">
+
+                <span class="status rent">FOR RENT</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House4.png" alt="House">
+
+                <span class="status rent">FOR RENT</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1200 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 5 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House5.png" alt="House">
+
+                <span class="status rent">FOR RENT</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 6 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House6.png" alt="House">
+
+                <span class="status rent">FOR RENT</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 7 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House7.png" alt="House">
+
+                <span class="status sale">FOR SALE</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+
+        <!-- Card 8 -->
+        <div class="property_card">
+
+            <div class="property_image">
+                <img src="./assets/House8.png" alt="House">
+
+                <span class="status sale">FOR SALE</span>
+
+                <div class="property_info">
+                    <i class="fa-solid fa-bed"></i> 3
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-bath"></i> 2
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-ruler-combined"></i> 1950 m2
+                </div>
+            </div>
+
+            <h3>Light And Modern House</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-------------- Load More Button ------------------>
+
+    <button class="load_more">
+        Load More
+    </button>
+
+</section>
+
+
+ <!---------------- GRID ------------------------>
+    <div class="container2">
+
+        <img class="first" src="./assets/first.png" alt="Kitchen">
+
+        <img class="second" src="./assets/second.png" alt="Property">
+
+        <div class="third">
+            <p>Wide Selection Of Properties</p>
+            <small>
+                Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard.
+            </small>
+        </div>
+
+        <img class="fourth" src="./assets/third.png" alt="Bathroom">
+
+        <img class="fifth" src="./assets/fourth.png" alt="Interior">
+
+        <img class="six" src="./assets/fifth.png" alt="Interior">
+
+    </div>
+
+
+<!----------------------------- SERVICE SECTION ----------------->
+
+    <section class="service-section">
+
+    <div class="overlay"></div>
+
+    <div class="service-content">
+
+        <div class="service-heading">
+            <h1>Why Our<br>Service Is The<br>Perfect Choice?</h1>
+            <hr>
+        </div>
+
+        <div class="service-item item-one">
+            <h2>01.</h2>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+        </div>
+
+        <div class="service-item item-two">
+            <h2>02.</h2>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+        </div>
+
+        <div class="service-item item-three">
+            <h2>03.</h2>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+        </div>
+
+        <div class="inquiry-form">
+            <h3>Real Estate Inquiry Form</h3>
+            <hr>
+
+            <form>
+                <label for="inquiry">Inquiry Type</label>
+                <select id="inquiry">
+                    <option>Renting Property</option>
+                    <option>Buying Property</option>
+                    <option>Selling Property</option>
+                </select>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@domain.com" required>
+
+                <label for="phone">Phone (Optional)</label>
+                <input type="tel" id="phone" placeholder="+1 (123) 456-0509">
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Please Enter Your Message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 3 House Grid -->
+
+<section class="featured">
+
+    <h1>Featured Listings</h1>
+
+    <p class="featured_subtitle">
+        Browse our wide range of featured properties.
+    </p>
+
+
+    <div class="featured_grid">
+
+        <!-- Card 1 -->
+        <div class="featured_card">
+            <div class="featured_image">
+              <img src="./assets/House5.png" alt="House">
+            </div>
+            <h3>Light And Modern House</h3>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="featured_card">
+            <div class="featured_image">
+                <img src="./assets/House6.png" alt="House">
+            </div>
+            <h3>Light And Modern House</h3>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="featured_card">
+            <div class="featured_image">
+                <img src="./assets/House7.png" alt="House">
+            </div>
+            <h3>Light And Modern House</h3>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                7409 Knollwood Cove, Austin, TX, 78731
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Pagination -->
+
+    <div class="pagination">
+
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</section>
+
+    <!-- Testimonials Section -->
+     <section class="testimonials">
+
+    <h1>Testimonials</h1>
+    <p class="subtitle">What Our Clients Say About Us!</p>
+
+    <div class="testimonial_container">
+
+        <!-- Left Arrow -->
+        <button class="arrow left_arrow">&#8249;</button>
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+            <img src="./assets/person1.png" alt="David">
+
+            <h3>David Elson</h3>
+            <small>7th July 2022</small>
+
+            <p>
+                “Very professional broker<br /> with great apartments<br/>
+                selections”
+            </p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <img src="./assets/person2.png" alt="Stephanie">
+
+            <h3>Stephanie Nicol</h3>
+            <small>7th July 2022</small>
+
+            <p>
+                “Very good, they offer the <br/>best prices of properties<br/>
+                and customer service”
+            </p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <img src="./assets/person3.png" alt="Allen">
+
+            <h3>Allen Jordan</h3>
+            <small>7th July 2022</small>
+
+            <p>
+                “Good experience and good <br />customer welcoming<br />
+                reflects level of the broker”
+            </p>
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="arrow right_arrow">&#8250;</button>
+
+    </div>
+
+</section>
+
+
+    <!-- Newsletter Section -->
+<footer>
+    <div class="newsletter">
+        <h2>Newsletter Signup</h2>
+        <input type="text" placeholder="Enter your email">
+    </div>
+
+    <hr>
+
+    <!-- Footer Main Section -->
+    <div class="footer_main">
+
+        <!-- Logo + Description -->
+        <div class="footer_about">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Logo">
+                <h1>Logo</h1>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+            </p>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer_column">
+            <h3>Explore</h3>
+            <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer_column">
+            <h3>Services</h3>
+            <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer_column">
+            <h3>Contact</h3>
+            <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&copy; Lorem Ipsum - All rights reserved</p>
+    </div>
+
+</footer>
+    
+</body>
+
+</html>
