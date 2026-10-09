@@ -1,0 +1,1041 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Creating Navbar */
+.navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar .left {
+    margin-right:20px ;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar .right {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar button {
+    padding: 8px 15px;
+}
+
+.fa-solid fa-location-dot{
+    font-size: 5px;
+}
+
+.call{
+    background-color: rgb(94, 196, 237);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #0b3c6c;
+}
+
+/* HEADER */
+
+
+/* Main background section */
+.hero {
+    height: 415px;
+    width: 100%;
+    position: relative;
+
+    background-image: url("./assets/dream-home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom:  50px; ;
+}
+
+/* Dark overlay on background image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Heading */
+.hero-content {
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Search section */
+.search-container {
+    position: absolute;
+    top: 210px;
+    width: 80%;
+    max-width: 1000px;
+    z-index: 2;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.tab {
+    width: 120px;
+    height: 22px;
+    border: none;
+    background-color: #2788e5;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab.active {
+    background-color: white;
+    color: #111;
+}
+
+/* Search form */
+.search-form {
+    background-color: white;
+    border-radius: 12px;
+    padding: 17px;
+    display: flex;
+    align-items: end;
+    gap: 7px;
+    width: 100%;
+    min-height: 74px;
+}
+
+/* Each input group */
+.form-group {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 9px;
+    font-weight: bold;
+    color: #111;
+}
+
+.form-group select {
+    width: 100%;
+    height: 27px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    padding: 0 6px;
+    background-color: white;
+    color: #999;
+    font-size: 10px;
+    outline: none;
+}
+
+/* Search button */
+.search-btn {
+    flex: 1;
+    min-width: 85px;
+    height: 26px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2990fa;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0877e5;
+}
+
+
+
+
+/* ---------HOUSE GRID ------------ */
+/* PROPERTIES  */
+
+.properties {
+    width: 100%;
+    padding: 5px 55px 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+/*  HEADING */
+
+.properties h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.property_subtitle {
+    text-align: center;
+    color: gray;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+/*  PROPERTY GRID  */
+
+.property_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 14px;
+    margin-top: 30px;
+}
+
+
+/*PROPERTY CARD  */
+
+.property_card {
+    width: 100%;
+}
+
+
+/* PROPERTY IMAGE  */
+
+.property_image {
+    position: relative;
+    height: 235px;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.property_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/*  RENT / SALE  */
+
+.status {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+
+    padding: 5px 8px;
+
+    border-radius: 3px;
+
+    font-size: 9px;
+    color: white;
+}
+
+.rent {
+    background-color: #3ba88b;
+}
+
+.sale {
+    background-color: #46569b;
+}
+
+
+/*  BOTTOM INFORMATION  */
+
+.property_info {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 7px 8px;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+
+    font-size: 13px;
+}
+
+
+/* Font Awesome icons */
+
+.property_info i {
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+
+/*  CARD HEADING */
+
+.property_card h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 7px 0 5px;
+}
+
+
+/*  LOCATION  */
+
+.property_card p {
+    color: #888;
+    font-size: 12px;
+    margin: 0;
+}
+
+.property_card p i {
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+
+/*  LOAD MORE  */
+
+.load_more {
+    display: block;
+
+    margin: 35px auto 0;
+
+    width: 184px;
+    height: 47px;
+
+    background-color: white;
+    color: #2196f3;
+
+    border: 2px solid #2196f3;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.load_more:hover {
+    background-color: #2196f3;
+    color: white;
+}
+
+
+
+/*  CONTAINER 2  */
+
+
+.container2 {
+    width: 786px;
+    height: 370px;
+
+    margin: 25px auto;
+
+    display: grid;
+
+    grid-template-columns: 315px 147px 147px 147px;
+    grid-template-rows: 140px 105px 105px;
+
+    gap: 10px;
+}
+
+
+/* Container images */
+
+.container2 img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* FIRST IMAGE  */
+
+.first {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    border-radius: 60px 0 0 60px;
+}
+
+
+/* SECOND IMAGE */
+
+.second {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+/*  THIRD CONTENT  */
+
+.third {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    padding: 0 5px;
+}
+
+.third p {
+    color: #111;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.third small {
+    display: block;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    max-width: 280px;
+}
+
+.third::after {
+    content: "";
+
+    display: block;
+
+    width: 90px;
+    height: 2px;
+
+    background-color: #168cff;
+
+    margin-top: 12px;
+}
+
+
+/*  FOURTH IMAGE  */
+
+.fourth {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+/*  FIFTH IMAGE  */
+
+.fifth {
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border-radius: 0 45px 0 0;
+}
+
+
+/*  SIXTH IMAGE  */
+
+.six {
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    border-radius: 0 0 45px 0;
+}
+
+/* --------------SERVICE SECTION----------------- */
+/* Background image */
+.service-section {
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+
+    background-image: url("./assets/kitchen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    margin-bottom: 50px;
+}
+
+/* Dark blue overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(15, 47, 67, 0.65);
+}
+
+/* Main content layout */
+.service-content {
+    position: relative;
+    z-index: 1;
+
+    width: 82%;
+    max-width: 1100px;
+    min-height: 500px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 10px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Main heading */
+.service-heading {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+}
+
+.service-heading h1 {
+    font-size: 34px;
+    line-height: 1.18;
+    font-weight: 700;
+}
+
+.service-heading hr {
+    width: 60px;
+    border: none;
+    border-top: 3px solid white;
+    margin-top: 28px;
+}
+
+/* Service descriptions */
+.service-item h2 {
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.service-item p {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.item-one {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.item-two {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    align-self: start;
+    max-width: 300px;
+}
+
+.item-three {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    margin-left: 0;
+}
+
+/* Inquiry form card */
+.inquiry-form {
+    grid-column: 4;
+    grid-row: 1 / 3;
+
+    background-color: white;
+    color: #111;
+
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.inquiry-form > h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.inquiry-form > hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+/* Form fields */
+.inquiry-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-form label {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    padding: 8px 7px;
+    font-family: inherit;
+    font-size: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    outline: none;
+}
+
+.inquiry-form input,
+.inquiry-form select {
+    height: 27px;
+}
+
+.inquiry-form input::placeholder,
+.inquiry-form textarea::placeholder {
+    color: #aaa;
+}
+
+.inquiry-form textarea {
+    height: 65px;
+    resize: vertical;
+}
+
+/* Submit button */
+.inquiry-form button {
+    width: 55%;
+    height: 28px;
+    margin: 4px 0 0 auto;
+
+    border: none;
+    border-radius: 3px;
+    background-color: #2990f5;
+    color: white;
+
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inquiry-form button:hover {
+    background-color: #0877e5;
+}
+
+
+/* -----------3 House Grid---------- */
+
+/*  FEATURED LISTINGS  */
+
+.featured {
+    width: 100%;
+    padding: 5px 48px 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+/*  HEADING  */
+
+.featured h1 {
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    margin: 0;
+}
+
+.featured_subtitle {
+    text-align: center;
+
+    color: #888;
+
+    font-size: 16px;
+
+    margin-top: 5px;
+}
+
+
+/*  CARDS GRID  */
+
+.featured_grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    max-width: 910px;
+
+    margin: 25px auto 0;
+}
+
+
+/*  CARD  */
+
+.featured_card {
+    width: 100%;
+}
+
+
+
+
+.featured_image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+
+
+/* CARD TITLE */
+
+.featured_card h3 {
+    font-size: 16px;
+
+    font-weight: 400;
+
+    margin: 7px 0 5px;
+}
+
+
+/*  LOCATION  */
+
+.featured_card p {
+    color: #888;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+.featured_card p i {
+    font-size: 12px;
+
+    margin-right: 3px;
+}
+
+
+/*  PAGINATION */
+
+.pagination {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+.pagination span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #d5d5d5;
+}
+
+.pagination .active {
+    background-color: #2196f3;
+}
+
+
+
+/* --------Testimonials Section---------- */
+.testimonials {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-bottom: 50px;
+}
+
+
+/* Heading */
+
+.testimonials h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin-top: 5px;
+    color: gray;
+    font-size: 18px;
+}
+
+
+/* Main testimonial container */
+
+.testimonial_container {
+    width: 90%;
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: 70px 1fr 1fr 1fr 70px;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Individual testimonial */
+
+.testimonial {
+    text-align: center;
+}
+
+.testimonial img {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.testimonial h3 {
+    margin: 8px 0 4px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.testimonial small {
+    color: gray;
+    font-size: 14px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.35;
+    margin-top: 18px;
+    
+}
+
+
+/* Arrows */
+
+.arrow {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #2196f3;
+    color: white;
+
+    font-size: 35px;
+    height: 35px;
+
+    cursor: pointer;
+}
+
+.left_arrow {
+    justify-self: center;
+}
+
+.right_arrow {
+    justify-self: center;
+}
+
+/* ----------FOOTER------------ */
+
+footer {
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    border-top: 20px solid rgb(9, 100, 227);
+}
+
+/* Newsletter */
+
+.newsletter {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+}
+
+.newsletter input {
+    width: 400px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #444444;
+    margin: 0;
+}
+
+
+/* Main Footer */
+
+.footer_main {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 40px 90px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+
+/* Description */
+
+.footer_about p {
+    width: 400px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+
+/* Footer Columns */
+
+.footer_column h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.footer_column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_column li {
+    margin: 12px 0;
+    position: relative;
+    padding-left: 14px;
+}
+
+.footer_column li::before {
+    content: "•";
+    color: #2196f3;
+    position: absolute;
+    left: 0;
+}
+
+
+/* Copyright */
+
+.copyright {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    margin: 0;
+}
