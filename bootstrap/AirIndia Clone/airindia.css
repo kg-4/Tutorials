@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f6f7f7;
+    color: #252932;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+
+.navbar-section {
+    background-color: white;
+    box-shadow: 0 2px 5px #00000015;
+}
+
+.header-container {
+    max-width: 1600px;
+    min-height: 100px;
+    margin: auto;
+    padding: 15px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: #e4002b;
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #c79b57;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.top-menu,
+.main-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.top-menu {
+    font-size: 13px;
+}
+
+.main-menu {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.signup,
+.signin {
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.signup {
+    border: 1px solid #e4002b;
+    color: #e4002b;
+}
+
+.signin {
+    background: linear-gradient(100deg, #e4002b, #62004c);
+    color: white;
+}
+
+/* Main container */
+
+.main-container {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px 28px;
+}
+
+/* Flight booking */
+
+.booking-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 3px 12px #0000000b;
+}
+
+.booking-tabs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 6px;
+    background-color: #f7f8f8;
+    border-radius: 7px;
+    overflow-x: auto;
+}
+
+.booking-tabs a {
+    padding: 9px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.booking-tabs .active {
+    color: #e4002b;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #00000015;
+}
+
+.booking-tabs span {
+    margin-left: auto;
+    padding: 8px 12px;
+    color: #e4002b;
+    background-color: #fff1ee;
+    border-radius: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.booking-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 25px 0 20px;
+}
+
+.trip-options,
+.payment-options {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.trip-options input {
+    accent-color: #e4002b;
+}
+
+.trip-options a {
+    color: #2459a5;
+}
+
+.payment-options {
+    gap: 25px;
+}
+
+.payment-options b {
+    color: #a50043;
+    font-size: 18px;
+}
+
+.payment-options select {
+    border: 0;
+    background-color: transparent;
+}
+
+.promo-link {
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+.promo-link::first-letter {
+    color: #e4002b;
+}
+
+.flight-form {
+    padding-top: 5px;
+}
+
+.route-box {
+    display: flex;
+    align-items: center;
+}
+
+.route-input {
+    min-width: 0;
+    flex: 1;
+}
+
+.route-input label {
+    display: block;
+    color: #626d80;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.route-input input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    padding: 7px 0;
+}
+
+.route-input input::placeholder {
+    color: #28364c;
+    opacity: 1;
+}
+
+.swap {
+    color: #e4002b;
+    font-size: 24px;
+    padding: 0 8px;
+}
+
+.form-field {
+    min-height: 52px;
+    padding: 4px 10px;
+    border-left: 1px solid #c8ced8;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 6px;
+    color: #686c75;
+    font-size: 12px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #16243a;
+    font-size: 13px;
+}
+
+.search-button {
+    width: 100%;
+    padding: 16px 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #e35e78;
+    color: white;
+    font-weight: bold;
+}
+
+.discount-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 28px 0 0 auto;
+    padding: 8px 15px;
+    border: 1px solid #d5d5d5;
+    border-radius: 30px;
+    background-color: #faf8f2;
+    font-size: 12px;
+}
+
+.discount-message span {
+    color: #e4002b;
+    font-size: 22px;
+}
+
+/* Section headings */
+
+.deals-section {
+    margin-top: 30px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    margin: 0 0 12px;
+    color: #b70b36;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.view-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    border: 1px solid #e4002b;
+    border-radius: 10px;
+    color: #e4002b;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.view-button b {
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: #e4002b;
+    color: white;
+}
+
+/* Deal cards */
+
+.deal-card {
+    min-height: 143px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 72% 50%, #a5004c, #790034 43%, #23000f);
+    color: white;
+}
+
+.deal-card h3 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.gold-icon {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    border: 3px solid #e8b94e;
+    border-radius: 50%;
+    color: #f8d26c;
+    font-size: 55px;
+    text-shadow: 2px 3px 0 #8e5c17;
+}
+
+.gold-icon.percent {
+    border: 0;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.gold-icon:not(.percent) {
+    transform: rotate(-8deg);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 28px 0 30px;
+}
+
+.dots span,
+.banner-dots span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #b3b8c1;
+}
+
+.dots .selected {
+    background-color: #e4002b;
+}
+
+/* Service cards */
+
+.service-section {
+    margin-bottom: 28px;
+}
+
+.service-card {
+    min-height: 80px;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-radius: 16px;
+    background-color: white;
+    color: #42464e;
+    font-size: 18px;
+}
+
+.service-icon {
+    color: #e4002b;
+    font-size: 30px;
+}
+
+.service-card b {
+    margin-left: auto;
+    color: #e4002b;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+/* Maharaja Club banner */
+
+.maharaja-banner {
+    position: relative;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 17px;
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1540339832862-474599807836?auto=format&fit=crop&w=1800&q=90");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #070606 0%, #090707e8 25%, #08070765 58%, #08070725 100%);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 45px 5%;
+}
+
+.club-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: #e4b54d;
+    font-size: 28px;
+}
+
+.club-logo span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.club-logo b {
+    font-size: 15px;
+}
+
+.banner-content h2 {
+    margin-bottom: 8px;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.know-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 17px 22px;
+    border-radius: 10px;
+    background-color: #e4002b;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    display: flex;
+    gap: 22px;
+    transform: translateX(-50%);
+}
+
+.banner-dots .white-dot {
+    background-color: white;
+}
+
+/* Destination cards */
+
+.destination-section {
+    margin-top: 42px;
+}
+
+.destination-card {
+    min-height: 410px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 18px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.destination-card > div {
+    width: 100%;
+    padding: 22px 20px;
+    background: linear-gradient(0deg, #000e, transparent);
+}
+
+.destination-card h3 {
+    margin-bottom: 9px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.destination-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.melbourne {
+    background-image: url("https://images.unsplash.com/photo-1514395462725-fb4566210144?auto=format&fit=crop&w=900&q=85");
+}
+
+.bangalore {
+    background-image: url("https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=900&q=85");
+}
+
+.toronto {
+    background-image: url("https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85");
+}
+
+.newyork {
+    background-image: url("https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=85");
+}
+
+.kolkata {
+    background-image: url("https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=900&q=85");
+}
+
+.london {
+    background-image: url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=85");
+}
+
+.delhi {
+    background-image: url("https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=85");
+}
+
+.shanghai {
+    background-image: url("https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=900&q=85");
+}
+
+.site-footer {
+    padding: 22px;
+    text-align: center;
+    color: #666;
+    background-color: white;
+    font-size: 12px;
+}
+
