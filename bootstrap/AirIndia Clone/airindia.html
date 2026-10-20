@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air India</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="airindia.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar-section">
+        <div class="container-fluid header-container">
+            <a href="#" class="logo">AIR INDIA <span>◢</span></a>
+
+            <div class="header-right">
+                <div class="top-menu">
+                    <a href="#">▤ TARIFF</a>
+                    <a href="#">♧ SUPPORT</a>
+                    <a href="#">⌕ SEARCH</a>
+                    <a href="#">◎ IN⌄</a>
+                    <a href="#" class="signup">SIGN UP</a>
+                    <a href="#" class="signin">SIGN IN</a>
+                </div>
+
+                <nav class="main-menu">
+                    <a href="#">BOOK &amp; MANAGE</a>
+                    <a href="#">WHERE WE FLY</a>
+                    <a href="#">PREPARE TO TRAVEL</a>
+                    <a href="#">AIR INDIA EXPERIENCE</a>
+                    <a href="#">MAHARAJA CLUB</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid main-container">
+
+        <!-- Flight Booking -->
+        <section class="booking-box">
+
+            <div class="booking-tabs">
+                <a href="#" class="active">SEARCH FLIGHTS</a>
+                <a href="#">MANAGE BOOKING</a>
+                <a href="#">CHECK-IN</a>
+                <a href="#">FLIGHT STATUS</a>
+                <a href="#">eZ Booking</a>
+                <span>Flat 10% off For Students</span>
+            </div>
+
+            <div class="booking-options">
+                <div class="trip-options">
+                    <label><input type="radio" name="trip" checked> Round Trip</label>
+                    <label><input type="radio" name="trip"> One Way</label>
+                    <a href="#">Multi City</a>
+                </div>
+
+                <div class="payment-options">
+                    <span><b>SKYPULSE</b> AIR INDIA GROUP</span>
+                    <span>Pay By <select><option>Cash</option></select></span>
+                    <a href="#">Add Promo Code ﹀</a>
+                </div>
+            </div>
+
+            <form>
+                <div class="row align-items-center g-3 flight-form">
+
+                    <div class="col-12 col-lg-3">
+                        <div class="route-box">
+                            <div class="route-input">
+                                <label for="from">FROM</label>
+                                <input type="text" id="from" placeholder="Origin">
+                            </div>
+
+                            <span class="swap">↔</span>
+
+                            <div class="route-input">
+                                <label for="to">TO</label>
+                                <input type="text" id="to" placeholder="Destination">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-1-5">
+                        <div class="form-field">
+                            <label for="depart">Depart</label>
+                            <input type="date" id="depart">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-1-5">
+                        <div class="form-field">
+                            <label for="return">Return</label>
+                            <input type="date" id="return">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <div class="form-field">
+                            <label for="passengers">Passenger(s)</label>
+                            <select id="passengers">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>3 Adults</option>
+                                <option>4 Adults</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-1-5">
+                        <div class="form-field">
+                            <label for="class">Class</label>
+                            <select id="class">
+                                <option>Economy</option>
+                                <option>Premium Economy</option>
+                                <option>Business</option>
+                                <option>First Class</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <div class="form-field">
+                            <label for="concession">Concession Type</label>
+                            <select id="concession">
+                                <option>None</option>
+                                <option>Student</option>
+                                <option>Senior Citizen</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-1">
+                        <button type="button" class="search-button">Search</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="discount-message">
+                <span>％</span>
+                Logged-in users enjoy up to 15% off on fares
+            </div>
+        </section>
+
+        <!-- Exclusive Deals -->
+        <section class="deals-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>EXCLUSIVE DEALS</h2>
+                    <p>Uncover a range of deals and discounts, curated to ensure you get unbeatable value every time you fly with us.</p>
+                </div>
+                <a href="#" class="view-button">View All <b>24</b></a>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="deal-card">
+                        <h3>BANK<br>OFFERS</h3>
+                        <span class="gold-icon">₹</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="deal-card">
+                        <h3>DISCOUNT<br>CODES</h3>
+                        <span class="gold-icon percent">%</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="deal-card">
+                        <h3>LIMITED TIME<br>DEALS</h3>
+                        <span class="gold-icon">◷</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="deal-card">
+                        <h3>SPECIAL<br>FARES</h3>
+                        <span class="gold-icon">✈</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dots">
+                <span class="selected"></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="row g-4 service-section">
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="service-card">
+                        <span class="service-icon">♙</span>
+                        HOTELS <b>›</b>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="service-card">
+                        <span class="service-icon">♧</span>
+                        CAR BOOKING <b>›</b>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="service-card">
+                        <span class="service-icon">♜</span>
+                        DUTY FREE <b>›</b>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="service-card">
+                        <span class="service-icon">♧</span>
+                        GIFT CARD <b>›</b>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Maharaja Club Banner -->
+            <section class="maharaja-banner">
+                <div class="banner-overlay"></div>
+
+                <div class="banner-content">
+                    <div class="club-logo">✥ <span>AIR INDIA<br><b>MAHARAJA CLUB</b></span></div>
+
+                    <h2>ENROL WITH<br>MAHARAJA CLUB</h2>
+                    <p>and experience #ThatSpecialFeeling</p>
+
+                    <a href="#" class="know-button">Know More</a>
+                </div>
+
+                <div class="banner-dots">
+                    <span></span><span></span><span></span><span></span><span class="white-dot"></span>
+                </div>
+            </section>
+
+            <!-- Nonstop Flights -->
+            <section class="destination-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>BOOK NONSTOP DIRECT FLIGHTS</h2>
+                        <p>Spend less time travelling and more time at your destination. Our nonstop network connects India to destinations across Asia, Australia, Europe, the Middle East, North America, and more.</p>
+                    </div>
+                    <a href="#" class="view-button">View All</a>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card melbourne">
+                            <div>
+                                <h3>MELBOURNE</h3>
+                                <p>Melbourne Airport (MEL)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card bangalore">
+                            <div>
+                                <h3>BANGALORE</h3>
+                                <p>Kempegowda International Airport (BLR)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card toronto">
+                            <div>
+                                <h3>TORONTO</h3>
+                                <p>Toronto Pearson International Airport (YYZ)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card newyork">
+                            <div>
+                                <h3>NEW YORK</h3>
+                                <p>John F. Kennedy International Airport (JFK)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card kolkata">
+                            <div>
+                                <h3>KOLKATA</h3>
+                                <p>Netaji Subhas Chandra Bose International Airport (CCU)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card london">
+                            <div>
+                                <h3>LONDON</h3>
+                                <p>Heathrow Airport (LHR)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card delhi">
+                            <div>
+                                <h3>DELHI</h3>
+                                <p>Indira Gandhi International Airport (DEL)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="destination-card shanghai">
+                            <div>
+                                <h3>SHANGHAI</h3>
+                                <p>Shanghai Pudong International Airport (PVG)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>
